@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cute Compnions</title>
+    <!-- Favicons Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="file:///E:/all%20for%20codes/Sklyar/img/Лого.png">
+    <meta name="description" content="Sklyar">
+    <link rel="stylesheet" href="style.css">
+  <style type="text/css"></style>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+  </head>
+<body class="body"><!--  rgba(0, 231, 255);- голубой
+#3A4F50; - серый-->
+
+<nav class="navbar">
+       <div class="container">
+         <div href="#" class="navbar-brand">Cute Companions</div>
+
+<div class="navbar-wrap">
+         <ul class="navbar-menu">
+             <li><a href="page1.html">About us</a></li>
+             <li><a href="#TarifPlan">Тарифные планы</a></li>
+             <li><a href="affiliate.html">Affiliate program</a></li>
+             <li><a href="#Vopros">FAQ</a></li>
+
+<button onclick="openLoginModal()" class="btn-main_2">Sign In</button>
+<button onclick="openRegModal()" class="btn-main_2">Sign Up</button>
+
+<div id="loginModal" class="modal" style="display: none;">
+  <span class="close">×</span>
+  <h2 style="margin: 20px">Sign In</h2>
+  <form>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"class="form-control"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    <button type="submit" class="btn-main_2">Login</button>
+  </form>
+</div>
+
+<div id="regModal" class="modal" style="display: none;">
+  <span class="close">×</span>
+  <h2>Sign Up</h2>
+  <form>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    <button type="submit" class="btn-main_2">Register</button>
+  </form>
+</div>
+
+         </ul>
+          </div>
+       </div>
+   </nav>
+
+
+<header class="header">
+    <div class="container_1">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2 header-content">
+              <h1>Tradaer.in</h1>
+              <h4>Надёжный и стабильный проект</h4>
+              <h5>Откройте для себя возможности инвестирования и пассивного дохода онлайн!</h5><br>
+              <h5>Инвестируйте и зарабатывайте<br>Доход от 0,3% ежедневно<br>До 25% ежемесячных!<br>Вложения от 5 USD</h5>
+              <h5 style="text-decoration: underline">Трёхуровневая реферальная система</h5>
+
+              <button class="btn-main">ВЫБРАТЬ ТАРИФ</button>
+          </div>
+        </div>
+    </div>
+    <style>
+        .header {
+         position: relative;
+         min-height: 500px;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         text-align: center;
+         background-image: url(https://img.freepik.com/premium-photo/cash-and-coins-from-circle-hole-on-purple-background-money-saving-cashless-3d-render-illustration_37129-2571.jpg?w=740);
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0, .6);
+        }
+        .header .row {
+            min-height: 500px;
+            align-items: center;
+        }
+        .header-content {
+          text-align: center;
+          position: relative;
+          z-index: 2;
+          color: aqua;
+        }
+        .header-content h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .header-content h4 {
+            font-size: 21px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            margin-bottom: 35px;
+        }
+        .header-content h5 {
+         font-size: 18px;
+         color: aqua;
+         font-style: italic;
+         font-weight: bold;"
+        }
+        .btn-main {
+            display: inline-block;
+            padding: 10px 35px;
+            font-size: 18px;
+            border: none;
+            background-color: aqua;
+            border-radius: 100px;
+            font-weight: 700;
+            box-shadow: 0 5px 10px rgba(0, 0, 0);
+        }
+        .btn-main:hover {
+            box-shadow: 0 5px 10px rgba(0, 0, 0);
+            transform: scale(1.05);
+            transition: all 0.1s ease-out;
+            box-shadow: 0 0px 20px rgba(0, 231, 255, .5);
+            cursor: pointer;
+            }
+     </style>
+     <div class="overlay"></div>
+ </header>
+
+
+<div class="container_2 mt-5" style="margin: 200px 0">
+    <div class="row_2">
+        <div class="col-lg-4">
+            <form action="file:///C:/Users/Lenovo/Desktop/Trader.in.html?username=&amp;email=&amp;password=#">
+                <div class="form-group">
+                    <input type="text" id="name" class="form-control" required="">
+                    <label for="name">Ваше имя</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="email" class="form-control" required="">
+                    <label for="email">E-mail</label>
+                    <div><button tupe="simbit" class="btn-main_2">Отправить</button></div>
+                        <style>
+        .form-group {
+            text-align: center;
+         margin-bottom: 10px;
+         position: relative;
+        }
+        .form-control {
+margin: auto;
+            box-sizing: content-box;
+            display: block;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 9px 10px;
+            font-size: 11px;
+            transition: all 0.09s ease-out;
+
+        }
+        .form-control:focus {
+         outline: none;
+         border-color: rgba(0, 231, 255);
+         box-shadow: 0 0 5px rgba(0, 231, 255);
+
+        }
+        .form-control:focus ~ label {
+         top: -11px;
+         color: rgba(0, 231, 255);
+        }
+
+
+    </style>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="traif">
+   <h2 class="t-h">Тарифные планы</h2>
+<div class="t1">
+  <div class="r1">
+      <div class="icon"><p><img src="./Trader.in_files/money.png" width="40" height="30">1</p>
+      </div>
+    <p>0,3% каждые 24 часа!</p>
+    <p>Минимальный вклад: $5</p>
+    <p>Максимальный вклад: $100</p>
+  </div>
+  <div class="r1">
+      <div class="icon"><p><img src="./Trader.in_files/money.png" width="40" height="30">2</p>
+      </div>
+    <p>0,45% каждые 24 часа!</p>
+    <p>Минимальный вклад: $101</p>
+    <p>Максимальный вклад: $1000</p>
+  </div>
+  <div class="r1">
+    <div class="icon"><p><img src="./Trader.in_files/money.png" width="40" height="30">3</p>
+    </div>
+    <p>0,7% каждые 24 часа!</p>
+    <p>Минимальный вклад: $1001</p>
+    <p>Максимальный вклад: $∞</p>
+  </div>
+</div>
+<style>
+    .t-h {
+        color: aqua;
+        text-align: center;
+        margin: 50px;
+    }
+    .t1 {
+        color: white;
+        display:flex;
+        justify-content: space-between;
+        margin: 0 150px;
+    }
+    .r1 {
+        text-align: center;
+    }
+    .icon {
+        font-size: 60px;
+        color: aqua;
+        font-weight: bolder;
+        margin: -60px;
+
+    }
+    </style>
+</div>
+
+
+<div class="ref-box" style="margin: 200px 0">
+    <h3 style="color: aqua;">3 уровня<br>Реферальных коммиссий</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Уровень</th>
+      <th>Коммиссия</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>10%</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>5%</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1%</td>
+    </tr>
+
+
+
+  </tbody>
+</table>
+<style>
+        table {
+        color: #fff;
+        font-family: Arial, sans-serif;
+        width: 100%;
+        border-collapse: collapse;
+        }
+        th, td {
+        padding: 12px;
+        text-align: center;
+        }
+        th {
+        background-color: rgba(0, 231, 255);
+        text-transform: uppercase;
+        }
+        tbody tr:nth-child(odd) {
+        background-color: #424242;
+        }
+        tbody tr:nth-child(even) {
+        background-color: #3A4F50;
+        }
+</style>
+<p style="color: white"> Например : <br>Если кто-то зарегистрируется непосредственно под Вами (уровень 1) и вложит 100 долларов, Вы получите комиссию в размере 10%, что составляет 10 долларов. Если уровень 1 приглашает кого-то другого, этот человек становится Вашим рефералом уровня 2. Если Ваш реферал 2-го уровня инвестирует 100 долларов, Вы получите комиссию в размере 5%, что составляет 5 долларов. И если уровень 2 приглашает кого-то другого, этот человек становится Вашим рефералом уровня 3. Если Ваш реферал 3-го уровня инвестирует 100 долларов, Вы получите комиссию в размере 1%, что составляет 1 долларов.</p>
+</div>
+
+
+<main class="FAQ">
+  <div style="margin-left: 20px"><h1 style="color: white">FAQ</h1></div>
+      <h2 class="question">На сколько дней я могу сделать вклад?</h2>
+          <p class="answer">Минимальный срок вклада одни сутки.</p>
+      <h2 class="question">Когда происходят начисления?</h2>
+          <p class="answer">Каждый день с 20:00 до 22:00.</p>
+      <h2 class="question">Могу ли я создавать более одного аккаунта?</h2>
+          <p class="answer">Нет! Это категорически запрещается и в дальнейшем Ваш аккаунт и все средства на нём будут заблокированы.</p>
+      <h2 class="question">Сколко по времени занимает вывод вредств?</h2>
+          <p class="answer">От 10 минут до 24 часов.</p>
+      <h2 class="question">В какой валюте я могу сделать депозит?</h2>
+          <p class="answer">USDT, BTC</p>
+      <h2 class="question">Вопрос</h2>
+          <p class="answer">Ответ</p>
+
+  <style>
+    .FAQ  {
+         margin: 200px 0;
+         position: relative;
+         min-height: 600px;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-image: url(https://media.istockphoto.com/id/1309966216/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81-%D0%BC%D0%B0%D1%80%D0%BA-%D0%BD%D0%B5%D0%BE%D0%BD-%D0%BC%D0%BE%D0%BB%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%BA%D0%B8%D1%80%D0%BF%D0%B8%D1%87%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D0%B5%D0%BD%D0%B5.jpg?s=170667a&w=0&k=20&c=kWUPiaSyCeg93ZCm1ljK8EIF2clHrtnEcNfp1AjUl3A=);
+        }
+      .question {
+        color: aqua;
+          margin-left: 30px;
+      }
+      .answer {
+          color: white;
+          margin-left: 20px;
+      }
+    </style>
+</main>
+
+
+
+
+
+
+
+
+
+<div class="right timg">
+    <a class="telegramc" target="_blank" href="https://t.me/sk_inkome">
+         <style>
+      a.telegramc {
+    position: fixed;
+    bottom: 8.200000000000003rem;
+    right: 0;
+    width: 80px;
+    z-index: 10000;
+      }
+    </style>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 40 40">
+  <path fill="url(#paint0_linear)" d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"></path>
+  <path fill="#C8DAEA" d="M16.3334 29.1668C15.6855 29.1668 15.7956 28.9221 15.5721 28.3052L13.6667 22.0344L28.3334 13.3334"></path>
+  <path fill="#A9C9DD" d="M16.3333 29.1666C16.8333 29.1666 17.0542 28.938 17.3333 28.6666L19.9999 26.0736L16.6736 24.0678"></path>
+  <path fill="url(#paint1_linear)" d="M16.6733 24.0683L24.7333 30.0231C25.653 30.5306 26.3168 30.2678 26.5459 29.1692L29.8268 13.7087C30.1627 12.362 29.3134 11.7512 28.4335 12.1506L9.16855 19.5791C7.85353 20.1066 7.8612 20.8402 8.92885 21.1671L13.8727 22.7102L25.3182 15.4894C25.8585 15.1617 26.3544 15.3379 25.9474 15.6991"></path>
+  <defs>
+    <lineargradient id="paint0_linear" x1="26.668" x2="16.668" y1="6.668" y2="30" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#31AEFF"></stop>
+      <stop offset="1" stop-color="#1E80FF"></stop>
+    </lineargradient>
+    <lineargradient id="paint1_linear" x1="22.501" x2="25.631" y1="20" y2="27.122" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFF7FC"></stop>
+      <stop offset="1" stop-color="#fff"></stop>
+    </lineargradient>
+  </defs>
+</svg>
+    </a>
+  <script data-cfasync="false" src="file:///C:/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+     </div>
+     <!--Down menu-->
+<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <ul>
+                        <!--Telegram-->
+                        <a style="text-decoration: none" href="https://t.me/sk_inkome" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 40 40">
+  <path fill="url(#paint0_linear)" d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"></path>
+  <path fill="#C8DAEA" d="M16.3334 29.1668C15.6855 29.1668 15.7956 28.9221 15.5721 28.3052L13.6667 22.0344L28.3334 13.3334"></path>
+  <path fill="#A9C9DD" d="M16.3333 29.1666C16.8333 29.1666 17.0542 28.938 17.3333 28.6666L19.9999 26.0736L16.6736 24.0678"></path>
+  <path fill="url(#paint1_linear)" d="M16.6733 24.0683L24.7333 30.0231C25.653 30.5306 26.3168 30.2678 26.5459 29.1692L29.8268 13.7087C30.1627 12.362 29.3134 11.7512 28.4335 12.1506L9.16855 19.5791C7.85353 20.1066 7.8612 20.8402 8.92885 21.1671L13.8727 22.7102L25.3182 15.4894C25.8585 15.1617 26.3544 15.3379 25.9474 15.6991"></path>
+  <defs>
+    <lineargradient id="paint0_linear" x1="26.668" x2="16.668" y1="6.668" y2="30" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#31AEFF"></stop>
+      <stop offset="1" stop-color="#1E80FF"></stop>
+    </lineargradient>
+    <lineargradient id="paint1_linear" x1="22.501" x2="25.631" y1="20" y2="27.122" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFF7FC"></stop>
+      <stop offset="1" stop-color="#fff"></stop>
+    </lineargradient>
+  </defs>
+</svg>
+                        <font class="font">Telegram</font>
+                         </a>
+                          <!--Telegram end-->
+     <!--Email-->
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 41 40">
+<defs>
+<lineargradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#1D6FF2"></stop>
+<stop offset="100%" stop-color="#1AC8FC"></stop>
+</lineargradient>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<circle cx="20.5" cy="20" r="20" fill="url(#a)"></circle>
+<path fill="#FFF" d="M33.5213743,28.728481 C33.2275869,28.9010475 32.8853493,29 32.5200001,29 L8.4799999,29 C8.11465069,29 7.77241309,28.9010475 7.47862575,28.728481 L15.5,20.7071068 L17.4797799,22.6868867 C18.2448601,23.4519669 19.2618374,23.8333333 20.5,23.8333333 C21.7381626,23.8333333 22.7551399,23.4519669 23.5202201,22.6868867 L25.5,20.7071068 L33.5213743,28.728481 Z M34.228481,28.0213743 L26.2071068,20 L34.228481,11.9786257 C34.4010475,12.2724131 34.5,12.6146507 34.5,12.9799999 L34.5,27.0200001 C34.5,27.3853493 34.4010475,27.7275869 34.228481,28.0213743 Z M6.77151897,28.0213743 C6.59895254,27.7275869 6.5,27.3853493 6.5,27.0200001 L6.5,12.9799999 C6.5,12.6146507 6.59895254,12.2724131 6.77151897,11.9786257 L14.7928932,20 L6.77151897,28.0213743 Z M33.5213743,11.271519 L22.8131133,21.9797799 C22.2448601,22.5480331 21.4840596,22.8333333 20.5,22.8333333 C19.5159404,22.8333333 18.7551399,22.5480331 18.1868867,21.9797799 L7.47862575,11.271519 C7.77241309,11.0989525 8.11465069,11 8.4799999,11 L32.5200001,11 C32.8853493,11 33.2275869,11.0989525 33.5213743,11.271519 Z"></path>
+</g>
+</svg>
+<a style="text-decoration: none;" href="mailto:kiriltrushin11@gmail.com">
+<font class="font">Email</font>
+       </a>
+        <!--Email end-->
+                     <style>
+                         .font {
+                             color: white;
+                             font-size:22px;
+                             margin-left:10px;
+                             font-weight: bold;
+                         }
+                          </style>
+                    </ul>
+                  </div>
+
+
+
+
+
+
+
+
+<!--   <div class="container">
+    <div class="item" style="--i: 0"><i class="fas fa-music"></i></div>
+    <div class="item" style="--i: 1"><i class="fas fa-gamepad"></i></div>
+    <div class="item" style="--i: 2"><i class="fas fa-film"></i></div>
+    <div class="item" style="--i: 3"><i class="fas fa-book"></i></div>
+    <div class="item" style="--i: 4"><i class="fas fa-brush"></i></div>
+    <div class="item" style="--i: 5"><i class="fas fa-code"></i></div>
+    <div class="item" style="--i: 6"><i class="fas fa-camera"></i></div>
+    <div class="item" style="--i: 7"><i class="fas fa-bicycle"></i></div>
+    <div class="item" style="--i: 8"><i class="fas fa-plane"></i></div>
+    <div class="item" style="--i: 9"><i class="fas fa-dumbbell"></i></div>
+    <div class="item" style="--i: 10"><i class="fas fa-guitar"></i></div>
+    <div class="item" style="--i: 11"><i class="fas fa-puzzle-piece"></i></div>
+    <div class="item" style="--i: 12"><i class="fas fa-briefcase"></i></div>
+    <div class="item" style="--i: 13"><i class="fas fa-coffe"></i></div>
+    <div class="item" style="--i: 14"><i class="fas fa-utensils"></i></div>
+    <div class="item" style="--i: 15"><i class="fas fa-football-ball"></i></div>
+    <div class="item" style="--i: 16"><i class="fas fa-motorcycle"></i></div>
+    <div class="item" style="--i: 17"><i class="fas fa-tree"></i></div>
+    <div class="item" style="--i: 18"><i class="fas fa-heart"></i></div>
+    <div class="item" style="--i: 19"><i class="fas fa-rocker"></i></div>
+    <div class="item" style="--i: 20"><i class="fas fa-car"></i></div>
+
+    <style>
+        .container {
+            position: absolute;
+            top: 10%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 50%;
+                }
+        .item {
+            position: absolute;
+            width: calc(var(--i) * 2.5vmin);
+            aspect-ratio: 1;
+            border-radius: 50%;
+            border: .9vmin solid rgb(0, 200, 255);
+            transform-style: preserve-3d;
+            transform: rotateX(70deg) translateZ(50px);
+            animation: my-move 4s ease-in-out calc(var(--i) * 0.08s) infinite;
+            box-shadow: 0px 0px 15px rgb(124, 124, 124), inset 0px 0px 15px rgb(124, 124, 124);
+            }
+        @keyframes my-move {
+            0%,
+            100% {
+                transform: rotateX(70deg) translateZ(50px) translateY(0px);
+                filter: hue-rotate(0deg);
+            }
+            50% {
+                transform: rotateX(70deg) translateZ(50px) translateY(-50vmin);
+                filter: hue-rotate(180deg);
+            }
+        }
+    </style>
+</div>-->
+
+
+
+
+
+
+<script src="add.js"></script>
+</body>
+</html>

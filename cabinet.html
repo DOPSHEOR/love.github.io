@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CC | Cabinet</title>
+    <!-- Favicons Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="file:///E:/all%20for%20codes/Sklyar/img/Лого.png">
+    <meta name="description" content="Sklyar">
+    <link rel="stylesheet" href="style.css">
+  <style type="text/css"></style>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+  </head>
+<body class="body">
+
+<nav class="navbar">
+       <div class="container">
+         <div href="#" class="navbar-brand">Cute Companions</div>
+
+<div class="navbar-wrap">
+         <ul class="navbar-menu">
+             <li><a href="page1.html">About us</a></li>
+             <li><a href="#TarifPlan">Тарифные планы</a></li>
+             <li><a href="affiliate.html">Affiliate program</a></li>
+             <li><a href="#Vopros">FAQ</a></li>
+         </ul>
+          </div>
+       </div>
+   </nav>
+
+  <div class="container1">
+    <div class="menu-window">
+      <!-- menu -->
+
+    <a href="cabinet.html"><div class="menu-text"><h3>Home</h3></div></a>
+    <a href="finance.html"><div class="menu-text"><h3>Finance<span></span></h3></div></a>
+        <a href="affiliate.html"><div class="menu-text"><h3>Affiliate program</h3></div></a>
+        <a href=""><div class="menu-text"><h3>Bonuses</h3></div></a>
+          <a href=""><div class="menu-text"><h3>Achievements</h3></div></a>
+        <a href=""><div class="menu-text"><h3>Rating</h3></div></a>
+
+
+    </div>
+
+    <div class="content-window">
+      <img class="pet-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjgpxBReGiYYl8G3yba5kmT6f-d197XAJkxw&usqp=CAU" alt="Питомец">
+        <div class="stats-window">Stats:
+        <div class="stat-bar stamina">Stamina</div>
+        <div class="stat-bar talent">Talent</div>
+        <div class="stat-bar love">Love</div>
+      </div>
+   <style>
+    .container1 {
+      display: flex;
+    }
+    .content-window {
+      margin: 10px;
+      flex-grow: 1;
+      height: 400px;
+      position: relative;
+      width: 200px;
+      height: 550px;
+      background-color: #3A4F50;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 231, 255);
+      text-align: center;
+    }
+    .pet-image {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+        border-radius: 20px;
+    }
+    .stats-window {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 200px;
+      height: 100px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 14px;
+      padding: 5px;
+    }
+    .stat-bar {
+      height: 20px;
+      margin-bottom: 5px;
+        text-align: left;
+    }
+    .stamina {
+      background-color: green;
+    }
+    .talent {
+      background-color: blue;
+    }
+    .love {
+      background-color: red;
+    }
+   </style>
+
+  <div class="game-container">
+    <button id="pet-button" class="button" onclick="petCat()">Caress</button>
+    <button id="feed-button" class="button" onclick="feedCat()">Feed</button>
+    <button id="play-button" class="button" onclick="playWithCat()">Play</button>
+
+    <div id="sub-buttons-container">
+      <div class="sub-buttons pet">
+        <button id="pet1" class="button" onclick="increaseScore(1)">Hand</button>
+        <button id="pet2" class="button" onclick="increaseScore(1)">Brush</button>
+      </div>
+
+      <div class="sub-buttons feed">
+        <button id="feed1" class="button" onclick="increaseScore(5)">Milk</button>
+        <button id="feed2" class="button" onclick="increaseScore(5)">Fish</button>
+        <button id="feed3" class="button" onclick="increaseScore(5)">Chow</button>
+      </div>
+
+      <div class="sub-buttons play">
+        <button id="play1" class="button" onclick="increaseScore(10)">Bow</button>
+        <button id="play2" class="button" onclick="increaseScore(10)">Ball</button>
+        <button id="play3" class="button" onclick="increaseScore(10)">Mouse</button>
+      </div>
+    </div>
+
+    <p class="score" id="score">0</p>
+  </div>
+
+    <script>
+    var score = 0;
+    function petCat() {
+      var petButton = document.getElementById('pet-button');
+      petButton.disabled = true;
+      setTimeout(function() {
+        petButton.disabled = false;
+      }, 1000);
+      showSubButtons('pet');
+    }
+    function feedCat() {
+      var feedButton = document.getElementById('feed-button');
+      feedButton.disabled = true;
+      setTimeout(function() {
+        feedButton.disabled = false;
+      }, 5000);
+      showSubButtons('feed');
+    }
+    function playWithCat() {
+      var playButton = document.getElementById('play-button');
+      playButton.disabled = true;
+      setTimeout(function() {
+        playButton.disabled = false;
+      }, 10000);
+      showSubButtons('play');
+    }
+    function showSubButtons(buttonType) {
+      var subButtonsContainer = document.getElementById('sub-buttons-container');
+      var subButtons = subButtonsContainer.getElementsByClassName('sub-buttons');
+      for (var i = 0; i < subButtons.length; i++) {
+        subButtons[i].style.display = 'none';
+      }
+      var selectedSubButtons = subButtonsContainer.getElementsByClassName(buttonType);
+      if (selectedSubButtons.length > 0) {
+        selectedSubButtons[0].style.display = 'flex';
+      }
+    }
+    function increaseScore(points) {
+      score += points;
+      updateScore();
+      hideAllSubButtons();
+    }
+    function updateScore() {
+      var scoreElement = document.getElementById('score');
+      scoreElement.textContent = score;
+    }
+    function hideButton(buttonId) {
+      var button = document.getElementById(buttonId);
+      if (button) {
+        button.style.display = 'none';
+      }
+    }
+    function hideAllSubButtons() {
+      var subButtonsContainer = document.getElementById('sub-buttons-container');
+      var subButtons = subButtonsContainer.getElementsByClassName('sub-buttons');
+      for (var i = 0; i < subButtons.length; i++) {
+        subButtons[i].style.display = 'none';
+      }
+    }
+  </script>
+
+  <style>
+    .game-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .score {
+      font-size: 24px;
+      font-weight: bold;
+      position: absolute;
+      top: 1px;
+      right: 50px;
+
+    }
+    .sub-buttons {
+      display: none;
+        justify-content: center;
+    }
+    .sub-buttons .button {
+      margin: 5px;
+    }
+  </style>
+
+
+      </div>
+  </div>
+
+
+
+<script src="add.js"></script>
+</body>
+</html>
